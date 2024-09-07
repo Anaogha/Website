@@ -1,58 +1,83 @@
 body {
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-  }
-  
-  .container {
-    display: flex;
-    width: 100%;
-  }
-  
-  .left-side, .right-side {
-    width: 50%;
     padding: 20px;
-  }
-  
-  .left-side {
     background-color: #f0f0f0;
-  }
-  
-  .right-side {
-    background-color: #fff;
-  }
-  
-  h1, h2, h3 {
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  p {
-    line-height: 1.5;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  li {
-    margin-bottom: 5px;
-  }
-  
-  .about-me, .education, .experience, .skills {
-    margin-bottom: 20px;
-  }
-  
-  .skills ul {
+}
+.cv-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.header {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .skills li {
-    width: 48%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    position: relative;
+}
+.profile-img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+.header-text {
+    margin-left: 20px;
+}
+.cv-label {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #4a4a4a;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+h2 {
+    font-size: 24px;
+    margin: 10px 0;
+    font-weight: normal;
+}
+.main-content {
+    display: flex;
+}
+.left-column {
+    flex: 2;
+    padding: 20px;
+}
+.right-column {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+.about-me {
+    background-color: #e6d1b8;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.section-title {
+    font-weight: bold;
     margin-bottom: 10px;
-  }
+}
+.skill-bar {
+    height: 10px;
+    background-color: #ffa500;
+    margin-bottom: 10px;
+}
+.contact-info p {
+    margin: 5px 0;
+}
+.contact-info a {
+    color: #0066cc;
+    text-decoration: none;
+}
 
-  
+.contact-info a:hover {
+    text-decoration: underline;
+}
